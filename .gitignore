@@ -1,0 +1,12 @@
+# Virtual environment
+venv/
+
+# ChromaDB database (rebuilds automatically when the app runs)
+chroma_db/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Streamlit secrets, if you ever add API keys
+.streamlit/secrets.toml

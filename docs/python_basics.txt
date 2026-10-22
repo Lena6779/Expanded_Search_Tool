@@ -1,0 +1,11 @@
+Python is a beginner-friendly programming language known for its clean, readable syntax. It is widely used for web development, data analysis, automation, and AI engineering.
+
+Variables in Python store data and don't need a declared type. Common data types include strings for text, integers and floats for numbers, and booleans for True or False values.
+
+Lists hold ordered collections of items, and dictionaries store data as key-value pairs. Both are mutable, so you can add, change, or remove items after creating them.
+
+Functions are defined with the def keyword and let you reuse blocks of code. They can take parameters and use return to send a value back to the caller.
+
+Loops repeat code. A for loop goes through each item in a list or range, and a while loop keeps running as long as a condition is true.
+
+A virtual environment keeps each project's packages separate. You create one with python -m venv venv, activate it, and then install packages with pip.

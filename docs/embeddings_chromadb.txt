@@ -1,0 +1,13 @@
+An embedding is a list of numbers that represents the meaning of a piece of text. Sentences with similar meanings end up with embeddings that are close together, even if they use different words.
+
+Sentence-transformers is a Python library that turns text into embeddings. A popular model is all-MiniLM-L6-v2, which is small, fast, and produces 384 numbers for each sentence.
+
+Semantic search compares the embedding of a query to the embeddings of stored documents. Instead of matching exact keywords, it finds results that mean something similar to what the user asked.
+
+Cosine similarity measures how close two embeddings are, with scores closer to 1 meaning more similar. A similarity threshold filters out weak matches, so only results above a certain score are shown.
+
+ChromaDB is a vector database that stores documents, their embeddings, and metadata in one place. A PersistentClient saves the data to a folder on disk, so the collection is still there after the program stops.
+
+Metadata lets you tag each document with extra information, like its source file or topic. The where parameter in a ChromaDB query filters results by that metadata, so you can search only within certain files.
+
+Chunking splits long documents into smaller pieces before embedding them. Smaller chunks make search results more precise, and common strategies include fixed-size chunks and splitting by paragraph.

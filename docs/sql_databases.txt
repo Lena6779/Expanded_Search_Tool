@@ -1,0 +1,9 @@
+SQL databases store data in tables made of rows and columns. Each table usually has a primary key that uniquely identifies every row.
+
+A foreign key is a column that links one table to another, like a book's author_id pointing to the authors table. This creates relationships between tables.
+
+A JOIN combines rows from two tables based on a related column, like a foreign key. INNER JOIN only keeps rows that match in both tables.
+
+The main SQL commands are SELECT to read data, INSERT to add rows, UPDATE to change rows, and DELETE to remove them. A WHERE clause limits which rows a command affects.
+
+SQLite is a lightweight database stored in a single file, which makes it great for small projects and learning. Python can connect to it with the built-in sqlite3 module.

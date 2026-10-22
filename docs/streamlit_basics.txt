@@ -1,0 +1,9 @@
+Streamlit is a Python library for building interactive web apps without writing HTML, CSS, or JavaScript. You run an app with the command streamlit run app.py, and it opens in your browser.
+
+Streamlit reruns the whole script from top to bottom every time a user interacts with a widget. This makes the code simple to write, but it also means regular variables reset on every rerun.
+
+Widgets like st.text_input, st.button, st.slider, and st.multiselect let users enter data and make choices. Each widget returns its current value, so you can use it right away in your code.
+
+st.session_state stores values that need to survive reruns, like a quiz score or a logged-in user. You can also use st.cache_resource to load expensive things, like a database connection, only once.
+
+Layout tools help organize the page. st.sidebar puts content in a side panel, st.columns places items side by side, st.tabs splits content into tabs, and st.expander hides details until the user clicks to open them.

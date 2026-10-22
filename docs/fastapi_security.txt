@@ -1,0 +1,11 @@
+Security in FastAPI starts with controlling who can access your API and what data they can send. Common tools include authentication, CORS settings, rate limiting, and input validation.
+
+JWT (JSON Web Token) authentication lets users log in once and receive a token. The client sends that token in the Authorization header with each request, and protected endpoints check it before returning data.
+
+Passwords should never be stored as plain text. Instead, they are hashed with a library like passlib or bcrypt, so even if the database leaks, the real passwords stay hidden.
+
+CORS (Cross-Origin Resource Sharing) controls which websites are allowed to call your API from a browser. In FastAPI, you add CORSMiddleware and list the allowed origins instead of allowing every site with a wildcard.
+
+Rate limiting restricts how many requests a client can make in a set amount of time. This protects the API from abuse and brute-force login attempts, and libraries like slowapi make it easy to add.
+
+Input sanitization and validation stop bad or harmful data from reaching your app. Pydantic models check data types automatically, and you can add extra checks to strip out dangerous characters or reject values that are too long.
